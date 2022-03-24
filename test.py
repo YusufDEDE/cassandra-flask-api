@@ -2,6 +2,8 @@ import time
 
 from database.cassandra_db import CassandraDB
 
+# CREATE KEYSPACE IF NOT EXISTS kong WITH REPLICATION = { 'class' : 'SimpleStrategy', 'replication_factor' : 3 };
+
 CREATE_TABLE_QUERY = """
 CREATE TABLE kong.users (
   userid text PRIMARY KEY,
