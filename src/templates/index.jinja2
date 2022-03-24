@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <title>Flask Boilerplate</title>
+    <meta name="HandheldFriendly" content="True"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover"/>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link href="{{ url_for('static', filename='css/style.css') }}" rel="stylesheet" type="text/css">
+    <meta name="theme-color" content="#5eb9d7"/>
+</head>
+
+<body>
+<div class="container">
+    <div class="row">
+        <div class="col-12">
+            <div class="text-center p-5">
+                <img src="{{ url_for('static', filename='img/flask-logo.png') }}" class="w-100">
+                <div class="head-title">
+                    Flask Boilerplate
+                </div>
+                <p class="head-description mt-2">
+                    Simple and understandable starter kit that can be used as a REST or Flask Web App.
+                </p>
+
+                <p class="mt-3" id="footer-desc"></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="{{ url_for('static', filename='js/script.js') }}"></script>
+</body>
+
+</html>
