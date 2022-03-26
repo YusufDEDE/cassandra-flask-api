@@ -3,6 +3,8 @@
 
 #### Install Process
 ```shell
+    $ docker pull cassandra
+    $ docker run --name cassandra -p 9042:9042 -d cassandra
     $ pip install -r requirements.txt
 ```
 
