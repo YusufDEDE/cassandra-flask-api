@@ -1,3 +1,4 @@
 venv/
 .env
 .idea/
+amazon_review_polarity_csv/
